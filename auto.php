@@ -7,4 +7,7 @@
  */
 
 
-echo "<img src='plaatjes/".$_POST['auto'].".jpg'>";
+foreach($_POST['auto'] as $auto) {
+    echo "<img src='plaatjes/".$auto.".jpg'>";
+}
+
